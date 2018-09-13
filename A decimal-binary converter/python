@@ -1,0 +1,71 @@
+#   Name:  Nwaneri Anthony Udochi
+#   Email: nwanerianthony05@gmail.com
+
+
+
+# A simple project that converts Decimals( between 0 and 2048) to thier equivalent values in Binary with ease
+
+
+x=int(input("Please enter an integer between 0 to 2048: "))
+binary_string= ""
+done =False
+while not done:
+    if 0<=x<2048:
+        if x>=1024:
+            binary_string+= "1"  
+            x%=1024
+        else:
+            binary_string+= "0"
+        if x>=512:
+            binary_string+= "1"  
+            x%=512
+        else:
+            binary_string+= "0"
+        if x>=256:
+
+            binary_string+= "1"
+            x%=256
+        else:
+            binary_string+= "0"
+        if x>=128:
+            binary_string+= "1"
+            x%=128
+        else:
+            binary_string+= "0"
+        if x>=64:
+            binary_string+= "1"
+            x%=64
+        else:
+            binary_string+= "0"
+        if x>=32:
+            binary_string+= "1"
+            x%=32
+        else:
+            binary_string+= "0"
+        if x>=16:
+            binary_string+= "1"
+            x%=16
+        else:
+            binary_string+= "0"
+        if x>=8:
+            binary_string+= "1"
+            x%=8
+        else:
+            binary_string+= "0"
+        if x>=4:
+            binary_string+= "1"
+            x%=4
+        else:
+            binary_string+= "0"
+        if x>=2:
+            binary_string+= "1"
+            x%=2
+        else:
+            binary_string+= "0"
+            binary_string+= str(x)
+        if binary_string!= "":
+            print(binary_string)
+            done=True
+    else:
+           print("invalid integer. number should be between 0 and 2048...")
+           x=int(input("Please enter an integer: "))
